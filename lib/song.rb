@@ -10,7 +10,7 @@ class Song
     @genre = genre
 
     @@count += 1
-    @@genre << genre if !(@@genre.include?(genre))
+    @@genres << genre if !(@@genres.include?(genre))
   end
 
   def self.count
